@@ -1,0 +1,30 @@
+import java.io.IOException;
+import java.io.PrintWriter;
+  
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+  
+public class one extends HttpServlet
+{
+  
+  private static final long serialVersionUID = 1L;
+
+public void doGet(HttpServletRequest req,HttpServletResponse res)throws ServletException,IOException
+    {    
+        if(req.getParameter(update==update)
+        {
+        res.setContentType("text/html");
+        PrintWriter pw = res.getWriter();
+        pw.println("updated");
+        pw.close();
+       } 
+    else{
+        res.setContentType("text/html");
+        PrintWriter pw = res.getWriter();
+        pw.println("created");
+        pw.close();
+    }  }    
+   
+}
