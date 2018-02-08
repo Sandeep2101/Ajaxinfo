@@ -81,7 +81,7 @@ rowNew.children().eq(5).append('<a href="/book/delete?id='+value['id']+'">delete
             <tr>
              <c:if test="${book != null}">
                         <td colspan="2" align="center">
-                    <Button type="save" formaction="/book/update">Save</Button>
+                    <Button type="save" formaction="/book/update">Submit</Button>
                 </td>
                     </c:if>
                     <c:if test="${book == null}">
@@ -95,6 +95,8 @@ rowNew.children().eq(5).append('<a href="/book/delete?id='+value['id']+'">delete
         </form>
     </div>
 
+       <c:if test="${book == null}">
+                           
     <div id="tablediv">
 <table cellspacing="0" id="countrytable"> 
     <tr> 
@@ -104,6 +106,7 @@ rowNew.children().eq(5).append('<a href="/book/delete?id='+value['id']+'">delete
         <th scope="col">price</th>          
     </tr> 
 </table>
-</div>   
+</div>
+ </c:if>   
 </body>
 </html>
